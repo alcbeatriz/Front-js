@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+width: 100%;
+min-height: 100vh;
+background-color: #696969;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.spotify-container-center{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.spotify-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.spotify-phone img{
+    height: 50rem;
+}
+
+.spotify-continue-conta{
+    display: flex;
+    align-items: center; /*horizontal*/
+    justify-content: space-around; /*vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1b200e;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid #1b200e;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.spotify-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 6rem;
+}
+
+.spotify-perfil{
+    background-color: #32cd32 ;
+    color: #1b200e;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.spotify-acompanhe{
+    color: #32cd32;
+    margin-top: 1rem;
+}
+
+.nao-conhece{
+    color: rgb(160,160,160);
+
+}
+
+.link-green{
+    color: #32cd32;
+}
+
+.get-the-app{
+    color: #32cd32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./imagens/googleplaybutton.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./imagens/apple-button.png');
+}
+
+/*
+pc
+*/
+@media (max-width:1024px){
+    .spotify-container-center{
+        width: 90%;
+    }
+}
+/*celular*/
+@media (max-width: 650px){
+    body{
+        background-color: #ffffff;
+    }
+
+    .spotify-container-center{
+        width: 90%;
+    }
+    .spotify-phone{
+        display: none;
+    }
+    .spotify-continue-conta{
+        width: 100%;
+    }
+    .group{
+        border: 1px solid transparent;
+    }
+}
+
