@@ -1,4 +1,4 @@
-##Bootcamp LocalizaLabs 
+##JavaScript Game Developer - Digital Innovation One
 
 # Oi oi, Meu nome é Beatriz 👋
 <h6>Bia - Bea - Bea,A triz</h6>
